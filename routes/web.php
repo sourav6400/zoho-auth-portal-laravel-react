@@ -13,8 +13,8 @@ use App\Http\Controllers\AuthController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/{slag?}', function () {
+    return view('index');
+});
 
-Route::get('/', [AuthController::class, 'index']);
+// Route::get('/', [AuthController::class, 'index']);
